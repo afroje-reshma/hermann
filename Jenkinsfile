@@ -20,7 +20,7 @@ stage ('Build') {
    // archive (includes: 'pkg/*.gem')
 
     // publish html
-    publishHTML ([
+    publishHTML (target: [
         allowMissing: false,
         alwaysLinkToLastBuild: false,
         keepAll: true,
